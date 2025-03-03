@@ -11,7 +11,7 @@ const HeroSection = () => {
     <div className="relative h-screen">
       <Image
         src="/landing-splash.jpg"
-        alt="Rooma Platform Hero Section"
+        alt="Rooma Rental Platform Hero Section"
         fill
         className="object-cover object-center"
         priority
@@ -21,7 +21,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="absolute top-1/3 transform -translate-x-1/2 -translate-y-1/2 text-center w-full"
+        className="absolute top-1/3 transform text-center w-full"
       >
         <div className="max-w-4xl mx-auto px-16 sm:px-12">
           <h1 className="text-5xl font-bold text-white mb-4">
@@ -31,10 +31,12 @@ const HeroSection = () => {
             Explore our wide range of rental properties tailored to fit your
             lifestyle and needs!
           </p>
+
           <div className="flex justify-center">
             <Input
               type="text"
               value="Search Query"
+              onChange={() => {}}
               placeholder="Search by city, neighborhood or address"
               className="w-full max-w-lg rounded-none rounded-l-xl border-none bg-white h-12"
             />
